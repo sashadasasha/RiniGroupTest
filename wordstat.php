@@ -7,12 +7,12 @@ $regionValue = trim(htmlspecialchars(strip_tags(stripslashes($_POST['region'])))
 
 #Определение региона показов
 switch ($regionValue) {
-  case "all": $regionId = [1];
+  case "all": $regionId = [0];
   break;
-  case "Moscow": $regionId = [213];
+  case "Moscow": $regionId = [1];
   break;
   case "Dubna": $regionId = [215];
-  default: $regionId = [1];
+  default: $regionId = [0];
   break;
 }
 
